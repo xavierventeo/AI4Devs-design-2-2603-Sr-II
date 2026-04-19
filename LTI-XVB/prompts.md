@@ -25,23 +25,27 @@ Para cada User Story, usa EXACTAMENTE la estructura de la siguiente plantilla: #
 
 El formato de salida es un fichero markdown UserStories-XVB.md con el contenido de las User Stories.
 
-# Prompt 2 - Generar Product Backlog.
+# Prompts 2 - Product Backlog
 
+## Prompt 2.1: 
+Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. 
+Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 1
+
+## Prompt 2.2:
 Actúa como un Product Manager con amplia experiencia en metodologías ágiles y definición de producto orientado a MVP.
 
 Analiza las User Stories definidas en @file:UserStories-XVB.md  Genera un Product Backlog listo para desarrollo en formato tabla. Para cada entrada, justifica brevemente por qué es prioritaria según la visión del PRD del ATS -LTI https://github.com/xavierventeo/AI4Devs-design-1-2026-03_srII/blob/LTI-XVB/LTI-XVB/LTI-XVB.md
+Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 2
 
-| ID | Título | Prioridad | Estimación | Justificación |
-|----|--------|-----------|------------|--------------|
-| US-001 | Autenticación de usuario | Alta | Small | Base del sistema para seguridad y acceso, alineado con precondiciones de casos de uso en PRD, esencial para proteger datos en startups. |
-| US-002 | Creación de ofertas básicas | Alta | Small | Inicia el proceso de reclutamiento, valor directo para reclutadores, reduce tiempo manual como en Caso de Uso 1 del PRD. |
-| US-006 | Envío de solicitud por candidato | Alta | Small | Cierra el loop del ATS, centraliza aplicaciones, mejora organización según Caso de Uso 3, alto impacto en candidatos. |
-| US-003 | Uso de plantillas para ofertas | Media | Small | Acelera creación y asegura consistencia, mejora eficiencia en startups, pero no crítico para MVP básico. |
-| US-004 | Selección de canales para publicación | Media | Small | Prepara distribución automatizada, maximiza alcance sin esfuerzo manual, alineado con Caso de Uso 2. |
-| US-007 | Parsing automático de currículos | Media | Medium | Automatiza extracción con IA, reduce sesgos y acelera evaluación, valor competitivo en PRD, pero complejidad media. |
-| US-005 | Publicación automática en canales | Baja | Medium | Integra APIs para distribución simultánea, alto riesgo por dependencias externas, posponer para validar base primero según visión lean. |
+## Prompt 2.3 (Ganador):
+Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en formato tabla en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 3
 
+## Explicación prompt con mejores resultados Prompt 2.3:
+Tanto el prompt 2.1 como el 2.3 ofrecen mejores resultados, ya que especifican claramente los criterios de aceptación. En cambio, el prompt 2.2 deja mayor libertad al modelo para basarse en los objetivos del proyecto, lo que da lugar a respuestas más verbosas pero menos detalladas y precisas.
 
+Finalmente, el prompt 2.3 es funcionalmente equivalente al 2.1; sin embargo, el uso de un formato en tabla mejora la claridad y facilita la visualización de la información. Además de dar una explicación de los criterios de priorización
+
+Me llamó la atención que el promnpt 2.1 y 2.3 no le indiqué el rol y pareció funcionar mejor al especificar los criterios que no tanto el darle un rol.
 
 
 

@@ -1,6 +1,6 @@
 # Prompt 1: Backlog Priorizado de User Stories para LTI
-
-Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero baclogPriorizado con titulo Prompt 1
+Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. 
+Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 1
 
 ## Criterios de Priorización
 - **Impacto en el usuario y valor a negocio**: Historias que habilitan funcionalidades críticas para el flujo de reclutamiento, mejoran la experiencia del usuario y generan valor inmediato (e.g., autenticación como base, creación de ofertas para iniciar el proceso, recepción para cerrar el loop).
@@ -55,10 +55,10 @@ Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlo
    - **Justificación**: Mayor esfuerzo y riesgo; posponer para validar base primero.
 
 # Prompt 2 - Generar Product Backlog.
-
 Actúa como un Product Manager con amplia experiencia en metodologías ágiles y definición de producto orientado a MVP.
 
 Analiza las User Stories definidas en @file:UserStories-XVB.md  Genera un Product Backlog listo para desarrollo en formato tabla. Para cada entrada, justifica brevemente por qué es prioritaria según la visión del PRD del ATS -LTI https://github.com/xavierventeo/AI4Devs-design-1-2026-03_srII/blob/LTI-XVB/LTI-XVB/LTI-XVB.md
+Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 2
 
 | ID | Título | Prioridad | Estimación | Justificación |
 |----|--------|-----------|------------|--------------|
@@ -71,8 +71,14 @@ Analiza las User Stories definidas en @file:UserStories-XVB.md  Genera un Produc
 | US-005 | Publicación automática en canales | Baja | Medium | Integra APIs para distribución simultánea, alto riesgo por dependencias externas, posponer para validar base primero según visión lean. |
 
 # Prompt 3 - Generar Backlog de Tareas Priorizado en Tabla.
+Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en formato tabla en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero @file:backlogPriorizado.md con titulo Prompt 3
 
-Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en formato tabla en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero @file:backlogPriorizado.md  con titulo Prompt 3
+## Criterios de Priorización
+- **Impacto en el usuario y valor a negocio**: Historias que habilitan funcionalidades críticas para el flujo de reclutamiento, mejoran la experiencia del usuario y generan valor inmediato (e.g., autenticación como base, creación de ofertas para iniciar el proceso, recepción para cerrar el loop).
+- **Complejidad y esfuerzo**: Historias Small requieren menos tiempo y recursos; Medium más.
+- **Riesgo y dependencias**: Historias con integraciones externas tienen mayor riesgo; dependencias como autenticación deben ir primero.
+
+## Backlog Priorizado
 
 | ID | Título | Prioridad | Impacto/Valor | Complejidad | Riesgo/Dependencias | Justificación |
 |----|--------|-----------|---------------|-------------|---------------------|--------------|
