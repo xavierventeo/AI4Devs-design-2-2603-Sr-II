@@ -48,4 +48,26 @@ Finalmente, el prompt 2.3 es funcionalmente equivalente al 2.1; sin embargo, el 
 Me llamó la atención que el promnpt 2.1 y 2.3 no le indiqué el rol y pareció funcionar mejor al especificar los criterios que no tanto el darle un rol.
 
 
+# Prompt 3 - Desglosar "US-002 - Creación de ofertas básicas" en tareas
+Actúa como un Technical Lead. Tu objetivo es desglosar la User Story "US-002 - Creación de ofertas básicas" en Tickets de Trabajo técnicos, granulares y listos para ser desarrollados en un Sprint.
 
+Para cada ticket, utiliza estrictamente la siguiente estructura basada en las mejores prácticas de gestión de proyectos:
+
+- ID del Ticket:
+- Título: Un resumen breve que refleje la esencia de la tarea. Debe ser lo suficientemente descriptivo para que cualquier miembro del equipo entienda rápidamente de qué se trata el ticket.
+
+- Descripción: 
+  - Propósito: Explicación de por qué es necesaria la tarea y qué problema resuelve.
+  - Detalles Específicos: Información adicional sobre requerimientos específicos, restricciones, o condiciones necesarias para la realización de la tarea.
+Criterios de Aceptación: Lista de condiciones Checklist que deben cumplirse y pasos de validación.
+  - Expectativas Claras: Lista detallada de condiciones que deben cumplirse para que el trabajo en el ticket se considere completado.
+  - Pruebas de Validación: Pasos o pruebas específicas que se deben realizar para verificar que la tarea se ha completado correctamente.
+- Prioridad: (Alta, Media, Baja).
+- Estimación: En puntos de historia (serie de Fibonacci: 1, 2, 3, 5, 8).
+- Asignación Sugerida: (Backend, Frontend, QA, o DevOps).
+- Etiquetas/Tags: (Ej: UI, API, Database, Seguridad, Sprint).
+- Comentarios/Notas: Advertencias técnicas o dependencias con otros tickets.
+- Enlaces/Referencias: Referencia al PRD de LTI o documentación de APIs externas.
+- Instrucción adicional: Asegúrate de que los tickets cubran tanto la lógica de negocio como la gestión de errores y la persistencia de datos
+
+El resultado generalo en formato tabla y añadelo al contenido de @file:UserStories-XVB.md 
