@@ -68,5 +68,18 @@ Analiza las User Stories definidas en @file:UserStories-XVB.md  Genera un Produc
 | US-003 | Uso de plantillas para ofertas | Media | Small | Acelera creación y asegura consistencia, mejora eficiencia en startups, pero no crítico para MVP básico. |
 | US-004 | Selección de canales para publicación | Media | Small | Prepara distribución automatizada, maximiza alcance sin esfuerzo manual, alineado con Caso de Uso 2. |
 | US-007 | Parsing automático de currículos | Media | Medium | Automatiza extracción con IA, reduce sesgos y acelera evaluación, valor competitivo en PRD, pero complejidad media. |
-| US-005 | Publicación automática en canales | Baja | Medium | Integra APIs para distribución simultánea, alto riesgo por dependencias externas, posponer para validar base primero según visión lean. |</content>
-<parameter name="filePath">/Users/xavier/git/AI4Devs-design-2-2603-Sr-II/LTI-XVB/baclogPriorizado
+| US-005 | Publicación automática en canales | Baja | Medium | Integra APIs para distribución simultánea, alto riesgo por dependencias externas, posponer para validar base primero según visión lean. |
+
+# Prompt 3 - Generar Backlog de Tareas Priorizado en Tabla.
+
+Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en formato tabla en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero @file:backlogPriorizado.md  con titulo Prompt 3
+
+| ID | Título | Prioridad | Impacto/Valor | Complejidad | Riesgo/Dependencias | Justificación |
+|----|--------|-----------|---------------|-------------|---------------------|--------------|
+| US-001 | Autenticación de usuario | Alta | Crítico para seguridad y acceso; sin ella, ninguna funcionalidad es usable. | Small | Bajo riesgo; dependencia para todas las demás historias. | Base del sistema; alto valor negocio al proteger datos. |
+| US-002 | Creación de ofertas básicas | Alta | Alto; inicia el proceso de reclutamiento, valor directo para reclutadores. | Small | Bajo riesgo; depende de autenticación. | Esencial para el flujo principal; bajo esfuerzo. |
+| US-006 | Envío de solicitud por candidato | Alta | Alto; permite a candidatos aplicar, cerrando el loop del ATS. | Small | Bajo riesgo; independiente de otras. | Impacto en usuario final (candidatos); valor negocio al atraer aplicaciones. |
+| US-003 | Uso de plantillas para ofertas | Media | Medio; acelera creación, mejora consistencia. | Small | Bajo riesgo; depende de US-002. | Mejora eficiencia, pero no esencial para MVP básico. |
+| US-004 | Selección de canales para publicación | Media | Medio; prepara para distribución. | Small | Bajo riesgo; depende de US-002. | Paso intermedio; valor al permitir elección, pero no publicación aún. |
+| US-007 | Parsing automático de currículos | Media | Medio; automatiza extracción de datos, valor para revisión. | Medium | Medio riesgo (IA/parsing); depende de US-006. | Complejidad media; riesgo por tecnología externa. |
+| US-005 | Publicación automática en canales | Baja | Alto potencial, pero bajo inmediato sin canales configurados. | Medium | Alto riesgo (integraciones APIs); depende de US-004. | Mayor esfuerzo y riesgo; posponer para validar base primero. |</content>
