@@ -17,3 +17,6 @@ Para [beneficio]
 
 **Estimación de complejidad:**  
 (Small, Medium, Large)
+
+**Definición de Completado (DoD):**  
+Checklist que indica que la User Story se ha completado
