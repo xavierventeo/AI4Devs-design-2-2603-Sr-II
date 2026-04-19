@@ -221,10 +221,6 @@ Incluye parsing automático con IA, extrayendo experiencia, habilidades, almacen
 
 # Product Backlog
 
-# Prompt 1: Backlog Priorizado de User Stories para LTI
-
-Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlog de tareas priorizandolas en basa a: criterio de impacto en el usuario y valor a negocio, complejidad y esfuerzo, riesgo y dependencias. Genera la salida en el fichero baclogPriorizado con titulo Prompt 1
-
 ## Criterios de Priorización
 - **Impacto en el usuario y valor a negocio**: Historias que habilitan funcionalidades críticas para el flujo de reclutamiento, mejoran la experiencia del usuario y generan valor inmediato (e.g., autenticación como base, creación de ofertas para iniciar el proceso, recepción para cerrar el loop).
 - **Complejidad y esfuerzo**: Historias Small requieren menos tiempo y recursos; Medium más.
@@ -242,5 +238,3 @@ Dadas las User Stories definidas en @file:UserStories-XVB.md  y genera un backlo
 | US-007 | Parsing automático de currículos | Media | Medio; automatiza extracción de datos, valor para revisión. | Medium | Medio riesgo (IA/parsing); depende de US-006. | Complejidad media; riesgo por tecnología externa. |
 | US-005 | Publicación automática en canales | Baja | Alto potencial, pero bajo inmediato sin canales configurados. | Medium | Alto riesgo (integraciones APIs); depende de US-004. | Mayor esfuerzo y riesgo; posponer para validar base primero. |
 
-
-# Prompt 3 - Generar Backlog de Tareas Priorizado en Tabla.
