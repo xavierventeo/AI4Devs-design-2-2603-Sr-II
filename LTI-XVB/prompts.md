@@ -25,6 +25,22 @@ Para cada User Story, usa EXACTAMENTE la estructura de la siguiente plantilla: #
 
 El formato de salida es un fichero markdown UserStories-XVB.md con el contenido de las User Stories.
 
+# Prompt 2 - Generar Product Backlog.
+
+Actúa como un Product Manager con amplia experiencia en metodologías ágiles y definición de producto orientado a MVP.
+
+Analiza las User Stories definidas en @file:UserStories-XVB.md  Genera un Product Backlog listo para desarrollo en formato tabla. Para cada entrada, justifica brevemente por qué es prioritaria según la visión del PRD del ATS -LTI https://github.com/xavierventeo/AI4Devs-design-1-2026-03_srII/blob/LTI-XVB/LTI-XVB/LTI-XVB.md
+
+| ID | Título | Prioridad | Estimación | Justificación |
+|----|--------|-----------|------------|--------------|
+| US-001 | Autenticación de usuario | Alta | Small | Base del sistema para seguridad y acceso, alineado con precondiciones de casos de uso en PRD, esencial para proteger datos en startups. |
+| US-002 | Creación de ofertas básicas | Alta | Small | Inicia el proceso de reclutamiento, valor directo para reclutadores, reduce tiempo manual como en Caso de Uso 1 del PRD. |
+| US-006 | Envío de solicitud por candidato | Alta | Small | Cierra el loop del ATS, centraliza aplicaciones, mejora organización según Caso de Uso 3, alto impacto en candidatos. |
+| US-003 | Uso de plantillas para ofertas | Media | Small | Acelera creación y asegura consistencia, mejora eficiencia en startups, pero no crítico para MVP básico. |
+| US-004 | Selección de canales para publicación | Media | Small | Prepara distribución automatizada, maximiza alcance sin esfuerzo manual, alineado con Caso de Uso 2. |
+| US-007 | Parsing automático de currículos | Media | Medium | Automatiza extracción con IA, reduce sesgos y acelera evaluación, valor competitivo en PRD, pero complejidad media. |
+| US-005 | Publicación automática en canales | Baja | Medium | Integra APIs para distribución simultánea, alto riesgo por dependencias externas, posponer para validar base primero según visión lean. |
+
 
 
 
